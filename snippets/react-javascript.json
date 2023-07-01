@@ -1,0 +1,123 @@
+{
+	"stc": {
+		"prefix": "stc",
+		"body": [
+			"const { data, error } = await supabase",
+			"  .from('table_name')",
+			"  .insert({",
+			"    column1: value1,",
+			"    column2: value2,",
+			"    // Add more columns and values here",
+			"  })"
+		],
+		"description": "JavaScript: Import React"
+	},
+	"ssrwc": {
+		"prefix": "ssrwc",
+		"body": [
+			"const { data, error } = await supabase",
+			"  .from('table_name')",
+			"  .select('*')",
+			"  .eq('column_name', value)"
+		],
+		"description": "Select records from a table with a condition"
+	},
+	"sbur": {
+		"prefix": "sbur",
+		"body": [
+			"const { data, error } = await supabase",
+			"  .from('table_name')",
+			"  .update({",
+			"    column1: updatedValue",
+			"  })",
+			"  .eq('column_name', value)"
+		],
+		"description": "Update a record in a table"
+	},
+	"sbdr": {
+		"prefix": "sbdr",
+		"body": [
+			"const { data, error } = await supabase",
+			"  .from('table_name')",
+			"  .delete()",
+			"  .eq('column_name', value)"
+		],
+		"description": "Delete a record from a table"
+	},
+	"sbuf": {
+		"prefix": "sbuf",
+		"body": [
+			"const { data, error } = await supabase.storage",
+			"  .from('bucket_name')",
+			"  .upload('path/to/file', file)"
+		],
+		"description": "Upload a file to Supabase Storage"
+	},
+	"sbdf": {
+		"prefix": "sbdf",
+		"body": [
+			"const { data, error } = await supabase.storage",
+			"  .from('bucket_name')",
+			"  .download('path/to/file')"
+		],
+		"description": "Download a file from Supabase Storage"
+	},
+	"sbdelf": {
+		"prefix": "sbdelf",
+		"body": [
+			"const { data, error } = await supabase.storage",
+			"  .from('bucket_name')",
+			"  .remove('path/to/file')"
+		],
+		"description": "Delete a file from Supabase Storage"
+	},
+	"sblf": {
+		"prefix": "sblf",
+		"body": [
+			"const { data, error } = await supabase.storage",
+			"  .from('bucket_name')",
+			"  .list('path/to/folder')"
+		],
+		"description": "List files in a folder in Supabase Storage"
+	},
+	"sb-signup": {
+		"prefix": "sb-signup",
+		"body": [
+			"const { user, session, error } = await supabase.auth.signUp({",
+			"  email: 'user@example.com',",
+			"  password: 'password'",
+			"})"
+		],
+		"description": "Sign up a user"
+	},
+	"sb-login": {
+		"prefix": "sbs-login",
+		"body": [
+			"const { user, session, error } = await supabase.auth.signInWithPassword({",
+			"  email: 'user@example.com',",
+			"  password: 'password'",
+			"})"
+		],
+		"description": "Log in a user"
+	},
+	"sb-logout": {
+		"prefix": "sbs-logout",
+		"body": ["await supabase.auth.signOut()"],
+		"description": "Log out the current user"
+	},
+	"sbgu": {
+		"prefix": "sbgu",
+		"body": ["const { data: { user } } = await supabase.auth.getUser()"],
+		"description": "Get the current user"
+	},
+	"sbgs": {
+		"prefix": "sbgs",
+		"body": ["const session = supabase.auth.session()"],
+		"description": "Get the current session"
+	},
+	"sbrp": {
+		"prefix": "sbrp",
+		"body": ["await supabase.auth.resetPasswordForEmail('hello@example.com')"],
+		"description": "Reset password for an email"
+	}
+}
