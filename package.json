@@ -2,7 +2,7 @@
 	"name": "supabase-javascript-snippets",
 	"displayName": "Supabase javascript Snippets",
 	"description": "This is an extension for Javascript and React Snippets!",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"publisher": "supabase-snippets",
 	"icon": "logo.png",
 	"repository": {

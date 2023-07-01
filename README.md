@@ -8,7 +8,7 @@
 
 # 🌈 Table of Snippets
 
-Javascript Snippets currently has a total of 14 snippets.
+Javascript Snippets currently has a total of 18 snippets.
 
 | Prefix      | Description                                  | Language   |
 | ----------- | -------------------------------------------- | ---------- |
@@ -26,6 +26,10 @@ Javascript Snippets currently has a total of 14 snippets.
 | `sbgu`      | Get the current user                         | Javascript |
 | `sbgs`      | Get the current session                      | Javascript |
 | `sbrp`      | Reset password for an email                  | Javascript |
+| `sioauth`   | Sign in a user through OAuth                 | Javascript |
+| `fd`        | Perform a SELECT query on the table or view. | Javascript |
+| `csurl`     | Create a signed URL                          | Javascript |
+| `rpurl`     | Retrieve public URL                          | Javascript |
 
 ## ⭐ Show your support
 
@@ -34,4 +38,4 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2023 [Artem Chumachenko](https://github.com/rabbitarts).<br />
-This project is [GNU](https://github.com/buidler-hub/react-nextjs-snippets/blob/main/LICENSE) licensed.
+This project is [GNU](https://github.com/rabbitarts/supabase-snippets/blob/main/LICENSE) licensed.

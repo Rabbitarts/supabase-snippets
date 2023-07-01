@@ -119,5 +119,46 @@
 		"prefix": "sbrp",
 		"body": ["await supabase.auth.resetPasswordForEmail('hello@example.com')"],
 		"description": "Reset password for an email"
+	},
+	"sioauth": {
+		"prefix": "sioauth",
+		"body": [
+			"const { data, error } = await supabase.auth.signInWithOAuth({",
+			"  provider: 'github'",
+			"  options: {",
+			"    redirectTo: 'https://example.com/welcome'",
+			"  }",
+			"})"
+		],
+		"description": "Sign in a user through OAuth"
+	},
+	"fd": {
+		"prefix": "fd",
+		"body": [
+			"const { data, error } = await supabase",
+			"  .from('name_table')",
+			"  .select()"
+		],
+		"description": "Perform a SELECT query on the table or view."
+	},
+	"csurl": {
+		"prefix": "csurl",
+		"body": [
+			"const { data, error } = await supabase",
+			"  .storage",
+			"  .from('avatars')",
+			"  .createSignedUrl('folder/avatar1.png', 60)"
+		],
+		"description": "Create a signed URL"
+	},
+	"rpurl": {
+		"prefix": "rpurl",
+		"body": [
+			"const { data } = supabase",
+			"  .storage",
+			"  .from('public-bucket')",
+			"  .getPublicUrl('folder/avatar1.png')"
+		],
+		"description": "Retrieve public URL"
 	}
 }
